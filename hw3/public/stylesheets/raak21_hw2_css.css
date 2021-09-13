@@ -1,0 +1,81 @@
+/*
+	@author    Addison Raak
+	@version   2.0
+
+	This CSS file was created for CS341 hw01 at the University of Portland for Dr. Tribelhorn.
+
+	Last Updated on 09.07.2021
+*/
+
+/* These are CSS element attributes. They only effect the specified 
+   element group before each curly bracket group.					 */
+body {
+	background-color:  #dccb9d;
+	margin:  0;
+}
+
+h1 {
+	font-family: "Brush Script MT", cursive;
+	text-align: center;
+	/*color: #d1ceca;*/
+}
+
+div.justified {
+	display: flex;
+	justify-content: center;
+}
+
+p, h3 {
+	/*text-align: center;*/
+	margin-left: 10;
+	font-family: "Trebuchet MS", monospace;
+	font-weight: bold;
+	font-variant-caps: small-caps;
+	/*font-size: 150%;*/
+}
+
+header {
+	background-color: #b13c54;
+}
+
+table {
+	margin-left:  10;
+}
+
+/* These are CSS element attributes as well. These only effect the specified
+   elements that have the defined class="name" (e.g. <table class="center">) */
+.image-css {
+	display: block;
+	margin-left: 10;
+	width: 50%;
+}
+
+.center-txt {
+	display: inline-block;
+	justify-content: center;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.floatParent div {
+	display: inline-flex;
+	align-items: center;
+}
+
+
+/* Code taken from: https://www.w3docs.com/tools/code-editor/2690 */
+.dropdown {
+  width: 120px;
+  /*height: 30px;*/
+  border: 1px solid #999;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 5px;
+}
