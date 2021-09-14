@@ -32,5 +32,6 @@ $(function () {
     // hide the success text after the document has been loaded, but before the button is pressed
     $("#success").hide();
 
+    // EVENT CLICKED
     $("#orderButton").click(eventHandler);
 });

@@ -2,112 +2,116 @@
     @author    Addison Raak
     @version   3.0
 
-    This HTML file was created for CS341 hw01 at the University of Portland for Dr. Tribelhorn.
+    This HTML file was created for CS341 hw01 and has been updated for later homework assignments
+    at the University of Portland for Dr. Tribelhorn.
 
     Last Updated on 09.13.2021
 -->
 
 <html>
-<head>
-    <!-- This is the text that shows up for the name of the tab -->
-    <title>Cheesecake Order Form</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/raak21_hw2_css.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <head>
+        <!-- This is the text that shows up for the name of the tab -->
+        <title>Cheesecake Order Form</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/raak21_hw2_css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Script for the Order Button to check if there is the keyword 'vegan' in the textbox. -->
-    <script src="javascripts/script.js"></script>
-</head>
+        <!-- Script for the Order Button to check if there is the keyword 'vegan' in the textbox. -->
+        <script src="javascripts/script.js"></script>
+    </head>
 
-<body>
-    <!-- Header of the website -->
-    <header>
-        <h1>Cheesecake Order Form</h1>
-    </header>
+    <body>
+        <!-- Header of the website -->
+        <header>
+            <h1>Cheesecake Order Form</h1>
+        </header>
 
-    <!-- Photo of cheesecake sourced from the link below -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width=50% class="image-css" id="cheesecake">
+        <!-- Photo of cheesecake sourced from the link below -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width=50% class="image-css" id="cheesecake">
 
-    <p id="success"> Thank you! Your order has been placed. </p>
+        <!-- The text you see once you have put through a successful order. Hidden by JS script initially. -->
+        <p id="success"> Thank you! Your order has been placed. </p>
 
-    <p id="quantity">Quanity Topping</p>
-    <!-- Table to contain the drop down menu and the radio buttons -->
-    <table id="orderTable">
-        <tr>
-            <td width="50">
-                <!-- drop down menu with options 0 to 3 -->
-                <form id="numToppings">
-                    <select name="numToppings">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </form>
-            </td>
-            <td>
-                <!-- radio buttons consisting of a plain, cherry, and chocolate option -->
-                <form id="radioForm">
-                    <input type="radio" id="plain" name="radioGroup" checked>
-                    <label for="plain"> Plain </label> <br>
-
-                    <input type="radio" id="cherry" name="radioGroup">
-                    <label for="plain"> Cherry </label> <br>
-
-                    <input type="radio" id="chocolate" name="radioGroup">
-                    <label for="plain"> Chocolate </label>
-                </form>
-            </td>
-        </tr>
-    </table>
-
-    <p id="notes">Notes:</p>
-    <div style="margin-left: 20">
-        <form>
-            <!-- TextArea element to allow user input for special instructions -->
-            <textarea id="textbox" rows="5" cols="50" placeholder="Enter any special instructions here."></textarea>
-        </form>
-    </div>
-
-    <!-- Order Button -->
-    <div style="margin-left: 400; margin-bottom: 50">
-        <button type="button" id="orderButton">Order</button>
-    </div>
-
-    <!-- Smaller header and unordered, bullet point list -->
-    <table>
-        <tr>
-            <td>
-                <h3> Orders for </h3>
-            </td>
-            <td>
-                <div>
-                    <form>
-                      <select class="dropdown" id="dropdown" onfocus='this.size=4;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
-                        <option value="Jan">Jan</option>
-                        <option value="Feb">Feb</option>
-                        <option value="Mar">Mar</option>
-                        <option value="Apr">Apr</option>
-                        <option value="May">May</option>
-                        <option value="Jun">Jun</option>
-                        <option value="Jul">Jul</option>
-                        <option value="Aug">Aug</option>
-                        <option value="Sep">Sep</option>
-                        <option value="Oct">Oct</option>
-                        <option value="Nov">Nov</option>
-                        <option value="Dec">Dec</option>
-                      </select>
+        <p id="quantity">Quanity Topping</p>
+        <!-- Table to contain the drop down menu and the radio buttons -->
+        <table id="orderTable">
+            <tr>
+                <td width="50">
+                    <!-- drop down menu with options 0 to 3 -->
+                    <form id="numToppings">
+                        <select name="numToppings">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
                     </form>
-                </div>
-            </td>
-        </tr>
-    </table>
+                </td>
+                <td>
+                    <!-- radio buttons consisting of a plain, cherry, and chocolate option -->
+                    <form id="radioForm">
+                        <input type="radio" id="plain" name="radioGroup" checked>
+                        <label for="plain"> Plain </label> <br>
 
-    <div>
-        <ul>
-            <li>11 cherry</li>
-            <li>17 chocolate</li>
-            <li>31 plain</li>
-        </ul>
-    </div>
-</body>
+                        <input type="radio" id="cherry" name="radioGroup">
+                        <label for="plain"> Cherry </label> <br>
+
+                        <input type="radio" id="chocolate" name="radioGroup">
+                        <label for="plain"> Chocolate </label>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <p id="notes">Notes:</p>
+        <div style="margin-left: 20">
+            <form>
+                <!-- TextArea element to allow user input for special instructions -->
+                <textarea id="textbox" rows="5" cols="50" placeholder="Enter any special instructions here."></textarea>
+            </form>
+        </div>
+
+        <!-- Order Button -->
+        <div style="margin-left: 400; margin-bottom: 50">
+            <button type="button" id="orderButton">Order</button>
+        </div>
+
+        <!-- Smaller header and select form (dropdown menu) -->
+        <table>
+            <tr>
+                <td>
+                    <h3> Orders for </h3>
+                </td>
+                <td>
+                    <div>
+                        <form>
+                            <!-- fixed the dropdown menu from the last homework... it didn't work to my liking -->
+                            <select class="dropdown" id="dropdown" onfocus='this.size=4;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                          </select>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <!-- bullet point list with random data points. will connect to database at a later date. -->
+            <ul>
+                <li>11 cherry</li>
+                <li>17 chocolate</li>
+                <li>31 plain</li>
+            </ul>
+        </div>
+    </body>
 </html>
