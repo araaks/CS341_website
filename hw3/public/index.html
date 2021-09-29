@@ -1,11 +1,11 @@
 <!--
     @author    Addison Raak
-    @version   3.0
+    @version   4.0
 
     This HTML file was created for CS341 hw01 and has been updated for later homework assignments
     at the University of Portland for Dr. Tribelhorn.
 
-    Last Updated on 09.13.2021
+    Last Updated on 09.20.2021
 -->
 
 <html>
@@ -84,8 +84,9 @@
                 <td>
                     <div>
                         <form>
-                            <!-- fixed the dropdown menu from the last homework... it didn't work to my liking -->
-                            <select class="dropdown" id="dropdown" onfocus='this.size=4;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+                            <!-- dropdown menu that when hovered over, 3 options show. Once an option has been -->
+                            <!-- selected, the menu is collapsed.                                              -->
+                            <select class="dropdown" id="dropdown" onfocus='this.size=3;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
                                 <option value="Jan">Jan</option>
                                 <option value="Feb">Feb</option>
                                 <option value="Mar">Mar</option>
@@ -108,10 +109,12 @@
         <div>
             <!-- bullet point list with random data points. will connect to database at a later date. -->
             <ul>
-                <li>11 cherry</li>
-                <li>17 chocolate</li>
-                <li>31 plain</li>
+                <li id="line0">11 cherry</li>
+                <li id="line1">17 chocolate</li>
+                <li id="line2">31 plain</li>
             </ul>
         </div>
+        <!-- Temporary text used for general debugging purposes. -->
+        <!-- <p id="temp"> TEMPORARY </p> -->
     </body>
 </html>
