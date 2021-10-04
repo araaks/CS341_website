@@ -39,24 +39,24 @@
                     <!-- drop down menu with options 0 to 3 -->
                     <form id="numToppings">
                         <select name="numToppings">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                     </form>
                 </td>
                 <td>
                     <!-- radio buttons consisting of a plain, cherry, and chocolate option -->
                     <form id="radioForm">
-                        <input type="radio" id="plain" name="radioGroup" checked>
+                        <input type="radio" id="plain" name="radioGroup" value="plain" checked>
                         <label for="plain"> Plain </label> <br>
 
-                        <input type="radio" id="cherry" name="radioGroup">
-                        <label for="plain"> Cherry </label> <br>
+                        <input type="radio" id="cherry" name="radioGroup" value="cherry">
+                        <label for="cherry"> Cherry </label> <br>
 
-                        <input type="radio" id="chocolate" name="radioGroup">
-                        <label for="plain"> Chocolate </label>
+                        <input type="radio" id="chocolate" name="radioGroup" value="chocolate">
+                        <label for="chocolate"> Chocolate </label>
                     </form>
                 </td>
             </tr>
